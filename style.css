@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background: cadetblue;
+}
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width:calc(100vw - 65vw);
+    max-width: 100%;
+}
+.header{
+    background: linear-gradient(to left, #74ebd5, #95ace6);
+    padding: 30px 0;
+}
+.header h2{
+    text-align: center;
+    color: beige;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-size: 24px;
+}
+.form{
+    padding: 40px;
+
+}
+.form-control{
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 12px 10px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #cc2e2e;
+}
+.form-control i{
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    visibility: hidden;
+}
+.form-control small{
+    visibility: hidden;
+    color:#cc2e2e ;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+.form-control.success i.fa-check-circle{
+    color:#2ecc71 ;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color:#cc2e2e ;
+    visibility: visible;
+}
+
+.form .btn {
+    background:linear-gradient(to left, #74ebd5, #95ace6);
+    display: block;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: bisque;
+    letter-spacing: .5rem;
+    transition: .7s;
+}
+.form .btn:hover{
+    background: cadetblue;
+}
+@media(max-width:998px){
+    .container{
+        width: 77vw;
+        max-width: 100%;
+    }
+}
+
